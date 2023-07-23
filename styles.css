@@ -1,6 +1,8 @@
 body {
     background-color: rgb(31, 30, 30);
+    font-family: 'Roboto', sans-serif;
 }
+
 
 form {
     width: 30rem;
@@ -10,13 +12,24 @@ form {
     border-radius: 6px;
 }
 
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 input {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
     box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 4px;
+    padding: 0.25rem;
+    color: rgb(61, 58, 58);
 }
 
 button {
     display: block;
+    font: inherit;
 }
