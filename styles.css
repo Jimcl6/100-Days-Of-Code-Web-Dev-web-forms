@@ -3,6 +3,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
 
 form {
     width: 30rem;
