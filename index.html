@@ -15,6 +15,30 @@
     <form action="/" method="get">
         <label for="username">Your name:</label>
         <input type="text" name="user-name" id="username">
+        <label for="useremail">Email:</label>
+        <input type="email" name="user-email" id="useremail" placeholder="sample@email.com">
+        <label for="userage">Age:</label>
+        <input type="number" name="user-age" id="userage">
+        <label for="userpassword">Password:</label>
+        <input type="password" name="user-password" id="userpassword">
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" name="user-birthdate" id="birthdate">
+        <hr>
+        <h2>How should we verify your account?</h2>
+        <div class="verification">
+            <div class="form-control-inline">
+                <input type="radio" name="verify" id="verify-text-message" value="text-message">
+                <label for="verify-text-message">Via Text Message:(SMS)</label>
+            </div>
+            <div class="form-control-inline">
+                <input type="radio" name="verify" id="verify-phone" value="phone">
+                <label for="verify-phone">Via Phone(Call):</label>
+            </div>
+            <div class="form-control-inline">
+                <input type="radio" name="verify" id="verify-email" value="email">
+                <label for="verify-email">Via Email:</label>
+            </div>
+        </div>
         <button>Submit</button>
     </form>
 </body>
