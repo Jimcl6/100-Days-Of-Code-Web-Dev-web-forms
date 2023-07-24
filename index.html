@@ -16,22 +16,22 @@
     <header>
         <h1>Web Forms</h1>
     </header>
-    <form action="/" method="get">
+    <form action="/" method="GET" id="demo-form">
 
         <section>
             <h2>Your personal details:</h2>
             <ul>
                 <li>
                     <label for="username">Your name:</label>
-                    <input type="text" name="user-name" id="username">
+                    <input type="text" name="user-name" id="username" required />
                 </li>
                 <li>
                     <label for="useremail">Email:</label>
-                    <input type="email" name="user-email" id="useremail" placeholder="sample@email.com">
+                    <input type="email" name="user-email" id="useremail" placeholder="sample@email.com" required>
                 </li>
                 <li>
                     <label for="userpassword">Password:</label>
-                    <input type="password" name="user-password" id="userpassword">
+                    <input type="password" name="user-password" id="userpassword" required minlength="8" maxlength="16">
                 </li>
             </ul>
         </section>
@@ -105,8 +105,9 @@
 
         </section>
 
-        <section>
-            <button>Submit</button>
+        <section id="form-buttons">
+            <button type="reset">Clear</button>
+            <button type="submit" form="demo-form">Submit</button>
         </section>
     </form>
 </body>

@@ -49,7 +49,14 @@ textarea:focus {
     border: rgb(46, 0, 99);
 }
 
+#form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 button {
+    margin: 0.2rem;
     display: block;
     font: inherit;
     background-color: rgb(46, 0, 99);
