@@ -41,7 +41,7 @@
             <ul>
                 <li>
                     <label for="userage">Age:</label>
-                    <input type="number" name="user-age" id="userage">
+                    <input type="number" name="user-age" id="userage" required min="">
                 </li>
                 <li>
                     <label for="birthdate">Date of Birth:</label>
@@ -67,25 +67,27 @@
             <h2>How should we verify your account?</h2>
             <ul class="verification">
                 <li class="form-control-inline">
-                    <input type="radio" name="verify" id="verify-text-message" value="text-message">
+                    <input type="radio" name="verify" id="verify-text-message" value="text-message" required>
                     <label for="verify-text-message">Via Text Message:(SMS)</label>
                 </li>
                 <li class="form-control-inline">
-                    <input type="radio" name="verify" id="verify-phone" value="phone">
+                    <input type="radio" name="verify" id="verify-phone" value="phone" required>
                     <label for="verify-phone">Via Phone(Call):</label>
                 </li>
                 <li class="form-control-inline">
-                    <input type="radio" name="verify" id="verify-email" value="email">
+                    <input type="radio" name="verify" id="verify-email" value="email" required>
                     <label for="verify-email">Via Email:</label>
                 </li>
             </ul>
         </section>
 
+        <hr>
+
         <section>
             <h2>How should we contact you?</h2>
             <ul>
                 <li class="form-control-inline">
-                    <input type="checkbox" name="terms" id="agree-terms">
+                    <input type="checkbox" name="terms" id="agree-terms" required>
                     <label for="agree-terms">Agree to terms and conditions.</label>
                 </li>
                 <li class="form-control-inline">
