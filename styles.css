@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-body h1 {
+header h1 {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -17,13 +17,18 @@ form {
     border-radius: 6px;
 }
 
+section ul {
+    list-style: none;
+}
+
 label {
     display: block;
     margin-bottom: 0.5rem;
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
